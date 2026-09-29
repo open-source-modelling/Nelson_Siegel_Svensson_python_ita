@@ -1,9 +1,9 @@
 import numpy as np
 from scipy.optimize import minimize
 
-def NelsonSiegelSvansson(T, beta0, beta1, beta2, beta3, lambda0, lambda1):
+def NelsonSiegelSvensson(T, beta0, beta1, beta2, beta3, lambda0, lambda1):
     """
-    NelsonSiegelSvansson calcola la curva interpolata/estrappolata nei punti dell'array "T" utilizzando l'algoritmo di Nelson-Siegel-Svannson (NSS),
+    NelsonSiegelSvensson calcola la curva interpolata/estrappolata nei punti dell'array "T" utilizzando l'algoritmo di Nelson-Siegel-Svannson (NSS),
     parametrizzato con i parametri beta0, beta1, beta2, beta3, lambda0, lambda1. Restituisce un ndarray numpy di punti.
     
     Argomenti:
@@ -42,7 +42,7 @@ def NSSGoodFit(params, TimeVec, YieldVec):
     Implementato da Gregor Fabjan di Qnity Consultants il  16/11/2023
     """
 
-    return np.sum((NelsonSiegelSvansson(TimeVec, params[0], params[1], params[2], params[3], params[4], params[5])-YieldVec)**2)
+    return np.sum((NelsonSiegelSvensson(TimeVec, params[0], params[1], params[2], params[3], params[4], params[5])-YieldVec)**2)
 
 def NSSMinimize(beta0, beta1, beta2, beta3, lambda0, lambda1, TimeVec, YieldVec):
     """
