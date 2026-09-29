@@ -1,6 +1,6 @@
 <h1 align="center" style="border-botom: none">
   <b>
-    🐍 Algoritmo Nelson-Siegel-Svannson 🐍     
+    🐍 Algoritmo Nelson-Siegel-Svennson 🐍     
   </b>
 </h1>
 
