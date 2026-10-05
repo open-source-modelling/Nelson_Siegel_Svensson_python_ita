@@ -68,5 +68,5 @@ TimeResultVec = np.array([1, 2, 5, 10, 25, 30, 31]) # Scadenze per i rendimenti 
 OptiParam = NSSMinimize(beta0, beta1, beta2, beta3, lambda0, lambda1, TimeVec, YieldVec) # Viene utilizzato l'algoritmo del simplesso Nelder-Mead per trovare i parametri che producono una curva con i minimi residui rispetto ai dati di mercato.
 
 # Stampare la curva dei rendimenti con i parametri ottimali per confrontarla con i dati forniti
-print(NelsonSiegelSvansson(TimeResultVec, OptiParam[0], OptiParam[1], OptiParam[2], OptiParam[3], OptiParam[4], OptiParam[5]))
+print(NelsonSiegelSvensson(TimeResultVec, OptiParam[0], OptiParam[1], OptiParam[2], OptiParam[3], OptiParam[4], OptiParam[5]))
 ```
